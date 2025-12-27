@@ -1,0 +1,15 @@
+public class LevelSystem {
+    public static void main(String[] args) {
+
+        int[] levels = {1, 1, 0, 1};
+
+        for (int i = 0; i < levels.length; i++) {
+            if (levels[i] == 1)
+                System.out.println("Level " + (i+1) + " Completed");
+            else {
+                System.out.println("Level " + (i+1) + " Locked");
+                break;
+            }
+        }
+    }
+}
