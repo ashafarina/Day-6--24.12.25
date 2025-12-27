@@ -1,0 +1,22 @@
+class Gamer {
+    String name;
+    int points;
+
+    Gamer(String name, int points) {
+        this.name = name;
+        this.points = points;
+    }
+}
+
+public class RankingGame {
+    public static void main(String[] args) {
+
+        Gamer g1 = new Gamer("Asha", 120);
+        Gamer g2 = new Gamer("Ravi", 140);
+
+        System.out.println(
+            g1.points > g2.points ? g1.name + " Rank 1"
+                                  : g2.name + " Rank 1"
+        );
+    }
+}
