@@ -1,0 +1,17 @@
+public class ShootingGame {
+    public static void main(String[] args) {
+
+        int[] shots = {10, 8, 6, 9, 7};
+        int score = 0;
+
+        for (int s : shots)
+            score += s;
+
+        System.out.println("Final Score: " + score);
+
+        if (score >= 40)
+            System.out.println("You Win!");
+        else
+            System.out.println("Try Again");
+    }
+}
