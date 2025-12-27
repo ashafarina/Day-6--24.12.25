@@ -1,0 +1,20 @@
+import java.util.Random;
+
+public class DiceGame {
+    public static void main(String[] args) {
+
+        Random r = new Random();
+        int player = r.nextInt(6) + 1;
+        int computer = r.nextInt(6) + 1;
+
+        System.out.println("Player Dice: " + player);
+        System.out.println("Computer Dice: " + computer);
+
+        if (player > computer)
+            System.out.println("Player Wins!");
+        else if (player < computer)
+            System.out.println("Computer Wins!");
+        else
+            System.out.println("Draw Game");
+    }
+}
