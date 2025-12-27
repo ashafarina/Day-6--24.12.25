@@ -1,0 +1,28 @@
+class Racer {
+    String name;
+    int time;
+
+    Racer(String name, int time) {
+        this.name = name;
+        this.time = time;
+    }
+
+    void showResult() {
+        System.out.println(name + " Time: " + time);
+    }
+}
+
+public class RaceGame {
+    public static void main(String[] args) {
+
+        Racer r1 = new Racer("Player1", 120);
+        Racer r2 = new Racer("Player2", 115);
+
+        r1.showResult();
+        r2.showResult();
+
+        System.out.println(
+            r1.time < r2.time ? "Player1 Wins" : "Player2 Wins"
+        );
+    }
+}
