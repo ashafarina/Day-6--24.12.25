@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class WordGuess {
+    public static void main(String[] args) {
+
+        String[] words = {"java", "code", "game"};
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Guess the word: ");
+        String guess = sc.next();
+
+        boolean found = false;
+        for (String w : words) {
+            if (guess.equalsIgnoreCase(w)) {
+                found = true;
+                break;
+            }
+        }
+
+        System.out.println(found ? "Correct!" : "Wrong Guess");
+    }
+}
