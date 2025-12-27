@@ -1,0 +1,20 @@
+class GamePlayer {
+    int lives = 3;
+
+    void loseLife() {
+        lives--;
+    }
+
+    void showLives() {
+        System.out.println("Lives left: " + lives);
+    }
+}
+
+public class LifeGame {
+    public static void main(String[] args) {
+        GamePlayer p = new GamePlayer();
+        p.loseLife();
+        p.loseLife();
+        p.showLives();
+    }
+}
