@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class GamePoints {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int score = 0, choice;
+
+        do {
+            System.out.println("1.Win  2.Lose  3.Score  4.Exit");
+            choice = sc.nextInt();
+
+            if (choice == 1) score += 10;
+            else if (choice == 2) score -= 5;
+            else if (choice == 3)
+                System.out.println("Score: " + score);
+
+        } while (choice != 4);
+    }
+}
