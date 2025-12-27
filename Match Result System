@@ -1,0 +1,24 @@
+class Match {
+    String team;
+    int score;
+
+    Match(String team, int score) {
+        this.team = team;
+        this.score = score;
+    }
+}
+
+public class MatchGame {
+    public static void main(String[] args) {
+
+        Match[] matches = {
+            new Match("Team A", 180),
+            new Match("Team B", 175)
+        };
+
+        Match winner = matches[0].score > matches[1].score
+                       ? matches[0] : matches[1];
+
+        System.out.println("Winner: " + winner.team);
+    }
+}
