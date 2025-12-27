@@ -1,0 +1,23 @@
+class Player {
+    int health = 100;
+
+    void hit(int damage) {
+        health -= damage;
+    }
+
+    void showStatus() {
+        if (health > 0)
+            System.out.println("Player Alive, Health: " + health);
+        else
+            System.out.println("Game Over");
+    }
+}
+
+public class HealthGame {
+    public static void main(String[] args) {
+        Player p = new Player();
+        p.hit(40);
+        p.hit(70);
+        p.showStatus();
+    }
+}
