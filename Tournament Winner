@@ -1,0 +1,25 @@
+class Team {
+    String name;
+    int points;
+
+    Team(String name, int points) {
+        this.name = name;
+        this.points = points;
+    }
+}
+
+public class Tournament {
+    public static void main(String[] args) {
+
+        Team[] teams = {
+            new Team("Team A", 12),
+            new Team("Team B", 15)
+        };
+
+        Team winner = teams[0];
+        if (teams[1].points > winner.points)
+            winner = teams[1];
+
+        System.out.println("Winner: " + winner.name);
+    }
+}
