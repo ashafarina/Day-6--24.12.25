@@ -1,0 +1,21 @@
+class Player {
+    int score;
+
+    Player(int score) {
+        this.score = score;
+    }
+
+    void checkLevel() {
+        if (score >= 100)
+            System.out.println("Level Unlocked!");
+        else
+            System.out.println("Keep Playing");
+    }
+}
+
+public class LevelGame {
+    public static void main(String[] args) {
+        Player p = new Player(85);
+        p.checkLevel();
+    }
+}
