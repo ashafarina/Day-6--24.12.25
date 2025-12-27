@@ -1,0 +1,17 @@
+public class ArcheryGame {
+    public static void main(String[] args) {
+
+        int[] shots = {8, 10, 7, 9, 6};
+        int total = 0;
+
+        for (int s : shots)
+            total += s;
+
+        System.out.println("Total Score: " + total);
+
+        if (total >= 40)
+            System.out.println("Excellent Performance");
+        else
+            System.out.println("Good Try");
+    }
+}
