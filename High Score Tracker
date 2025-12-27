@@ -1,0 +1,13 @@
+public class HighScoreGame {
+    public static void main(String[] args) {
+
+        int[] scores = {120, 90, 150, 110};
+        int high = scores[0];
+
+        for (int s : scores)
+            if (s > high)
+                high = s;
+
+        System.out.println("Highest Score: " + high);
+    }
+}
