@@ -1,0 +1,19 @@
+import java.util.Random;
+
+public class LotteryGame {
+    public static void main(String[] args) {
+
+        Random r = new Random();
+        int lucky = 5;
+
+        for (int i = 1; i <= 3; i++) {
+            int num = r.nextInt(10);
+            System.out.println("Try " + i + ": " + num);
+
+            if (num == lucky) {
+                System.out.println("Jackpot!");
+                break;
+            }
+        }
+    }
+}
